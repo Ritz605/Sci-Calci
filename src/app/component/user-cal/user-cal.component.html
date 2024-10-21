@@ -1,0 +1,38 @@
+
+<div class="calculator-container">
+    <div class="calculator">
+      <div class="screen">
+        <input type="text" class="calc-input" [value]="display" disabled placeholder="0">
+      </div>
+      <div class="buttons">
+        <button class="btn" (click)="onClick('7')">7</button>
+        <button class="btn" (click)="onClick('8')">8</button>
+        <button class="btn" (click)="onClick('9')">9</button>
+        <button class="btn operator" (click)="onClick('/')">/</button>
+        <button class="btn" (click)="onClick('4')" >4</button>
+        <button class="btn" (click)="onClick('5')">5</button>
+        <button class="btn" (click)="onClick('6')">6</button>
+        <button class="btn operator" (click)="onClick('*')">*</button>
+        <button class="btn" (click)="onClick('1')">1</button>
+        <button class="btn" (click)="onClick('2')">2</button>
+        <button class="btn" (click)="onClick('3')">3</button>
+        <button class="btn operator" (click)="onClick('-')">-</button>
+        <button class="btn" (click)="onClick('0')">0</button>
+        <button class="btn" (click)="onClick('.')">.</button>
+        <button class="btn" (click)="calculate()">=</button>
+        <button class="btn operator" (click)="onClick('+')">+</button>
+        <button class="btn" (click)="onClick('sin')">sin</button>
+        <button class="btn" (click)="onClick('cos')">cos</button>
+        <button class="btn" (click)="onClick('tan')">tan</button>
+        <button class="btn" (click)="onClick('log')">log</button>
+        <button class="btn" (click)="onClick('sqrt')">√</button>
+        <button class="btn" (click)="onClick('square')">x²</button>
+        <button class="btn" (click)="onClick('pi')">π</button>
+
+        <button class="btn" (click)="onClick('(')">(</button>
+      <button class="btn" (click)="onClick(')')">)</button>
+        <button class="btn" (click)="clear()">C</button>
+      </div>
+    </div>
+  </div>
+  
